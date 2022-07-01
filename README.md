@@ -22,7 +22,9 @@ docker build -t <username>/node:latest .
 docker run -p <port-to-use>:5000 -d <username>/node:latest
 ```
 
-2. Chech if the image is running using
+2. Check if the image is running using
 ```
 docker ps -a
 ```
+
+3. The container address will be `http://<your_ip_address:<port-to-use>/devs`

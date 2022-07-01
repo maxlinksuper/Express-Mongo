@@ -13,3 +13,16 @@ npm install
 npm install -g nodemon
 nodemon server
 ```
+
+## How to create docker container
+
+1. In the terminal run:
+```
+docker build -t <username>/node:latest .
+docker run -p <port-to-use>:5000 -d <username>/node:latest
+```
+
+2. Chech if the image is running using
+```
+docker ps -a
+```

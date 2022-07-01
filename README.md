@@ -14,7 +14,7 @@ npm install -g nodemon
 nodemon server
 ```
 
-## How to create docker container
+## Creating the docker container
 
 1. In the terminal run:
 ```
@@ -28,3 +28,11 @@ docker ps -a
 ```
 
 3. The container address will be `http://<your_ip_address:<port-to-use>/devs`
+
+## Using image from repository
+Needs docker to be installed in your machine
+
+1. Run:
+```
+docker run -p <port-to-use>:5000 -d maxlinksuper/node:latest
+```
